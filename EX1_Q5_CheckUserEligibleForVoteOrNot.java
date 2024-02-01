@@ -1,0 +1,20 @@
+package Apna_College;
+
+import java.util.Scanner;
+
+public class EX1_Q5_CheckUserEligibleForVoteOrNot {
+    public static void  CheckUserEligibleForVoteOrNot(int age){
+        if(age>18){
+            System.out.println("You are eligible for giving a vote");
+        }
+        else  {
+            System.out.println("You are not eligible for giving a vote");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your age");
+        int age = sc.nextInt();
+        CheckUserEligibleForVoteOrNot(age);
+    }
+}
